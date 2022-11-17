@@ -1,0 +1,433 @@
+:root {
+    --color-principal:#E9E9E9;
+    --color-secundario:#DDD5C0;
+    --color-terciario:#AAB7A8;
+    --font-principal: 'Goudy Bookletter 1911', serif;
+    --font-secundaria:'Goudy Bookletter 1911', serif;
+}
+body {
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+
+}
+body p {
+    font-family: var(--font-secundaria);
+    padding: 0;
+
+}
+body h2 {
+    font-family: var(--font-principal);
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.inicio {
+    width: 100%;
+    height: 90vh;
+    margin: 40px;
+    max-width: 560px;
+    background-image: url(img/background1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: texto;
+    animation-duration: 5s;
+}
+.countdown {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-align: center;
+    padding: 20px 0;
+    font-family: var(--font-principal);
+}
+.countdown p {
+    margin: 0;
+}
+
+.lovestory {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lovestory-text {
+    padding: 20px 40px;
+    text-align: justify;
+}
+
+.lovestory-img {
+    width: 100%;
+    background-image: url(img/1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.box-uno {
+    width: 100%;
+    height: auto;
+    background-image: url(./img/boxuno-icon-mac.png);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    
+}
+.box-tres {
+    background-color: var(--color-terciario);
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--color-terciario);
+    color: var(--color-principal);
+    padding: 40px 0;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.box-tres .location {
+    background-image:url(./img/fondodos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 830px;
+    height: auto;
+    padding: 200px;
+}
+.box-tres .location p {
+    max-width: 300px;
+    padding-right: 30px;
+}
+.box-cuatro {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-cuatro .location {
+    background-image:url(./img/mesaderegalos2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 440px;
+    height: auto;
+    padding: 260px;
+    margin: 0;
+}
+.box-cuatro .location p {
+    max-width: 300px;
+    padding: 0;
+
+}
+#contenedor {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#contenedor > div {
+    display: flex;
+}
+
+span#enlace {
+    background-color: var(--color-terciario);
+    font-size: 1em;
+    padding: 14px 40px 8px 48px ;
+    text-align: center;
+    color: var(--color-principal);
+    border-radius: 50px 0 0 50px;
+    border: 1px solid var(--color-terciario);
+    margin-top: 10px;
+    border-right: 2px solid var(--color-principal);
+
+}
+
+button#copiador {
+    background-color: var(--color-terciario);
+    color: white;
+    border: none;
+    padding: 12px;    
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--color-terciario);
+    margin-top: 10px;
+    border-radius: 0 50px 50px 0;
+
+}
+#contenedor2 {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor2 > div {
+    display: flex;
+}
+
+.location {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+   
+}
+.location p {
+    font-size: 1.3em;
+    max-width: 480px;
+    text-align: center;
+    margin: 10px 40px;
+    
+}
+.location img {
+    width: 58px;
+}
+.audiodiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    margin: 18px 0;
+}
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria img {
+    width: 25vw;
+}
+
+.boton {
+    border: 1px solid var(--color-principal);
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 10px 30PX;
+    text-decoration: none;
+    border-radius: 50px;
+ }
+ .boton:hover {
+     color: var(--color-terciario);
+     background-color: var(--color-principal);
+     border: 1px solid var(--color-terciario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+ @media (max-width: 900px) {
+    .box-tres .location p {
+        max-width: 300px;
+        padding-right: 0px;
+    }
+  
+ }
+ .dresscode {
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 20px;
+    text-align: center;
+}
+.dresscode h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 2rem;
+}
+.dresscode p {
+    padding: 0;
+    margin: 0;
+    font-weight: 1em;
+}
+
+.final {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-principal);
+    background-image:url(background/end.png);
+
+}
+.final {
+    background-image: url(./img/ENDD.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.end {
+    margin: auto;
+    max-width: 540px;
+    text-align: center;
+    padding: 60px 80px;
+    color: var(--color-terciario);
+    
+    max-width: 440px;
+
+}
+
+.end h2{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+.end p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer img {
+    width: 60px;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+
+
+
+@media (max-width: 500px) {
+    .lovestory {
+        grid-template-columns: 1fr;
+    }
+    .box-tres {
+        border:none;
+       
+    }
+    .lovestory-img {
+        height: 50vh;
+    }
+    main .audio {
+        background-image: url(./img/background5.png);
+        background-size: cover;
+        background-position: center;
+        padding: 70px 0;
+    }
+    .box-uno {
+        background-image: url(./img/background5.png);
+        background-size: cover;
+        background-position: center;
+        padding: 140px 0;
+    }
+    .box-uno p {
+        max-width: 320px;
+    }
+    .box-tres {
+        padding: 10px 0;
+        
+       
+    }
+    .box-tres .location {
+        background-image:url(./img/fondouno.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 830px;
+        height: 50vh;
+        padding: 0px 0 ;
+        
+    }
+    .box-tres .location p {
+        padding-right: 0px;
+        padding: 0 30px ;
+    }
+
+    .box-cuatro .location {
+        background-image:url(./img/background5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 830px;
+        height: 50vh;
+        padding: 0px 0 ;
+    }
+
+    .box-cuatro .location p {
+        padding-right: 0px;
+        padding: 0 10px ;
+    
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .galeria img {
+        width: 50vw;
+    }
+
+    .final {
+        background-size: cover;
+    }
+
+    
+}

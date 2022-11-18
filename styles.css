@@ -141,6 +141,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    height: auto;
     align-items: center;
     justify-content: center;
 }

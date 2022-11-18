@@ -426,6 +426,9 @@ footer img {
         padding-right: 0px;
         padding: 0 30px ;
     }
+    .box-cuatro {
+        height: 60vh;
+    }
 
     .box-cuatro .location {
         background-image:url(./img/background5.png);
